@@ -9,7 +9,7 @@ setup(
     author="MadryLab",
     author_email="trak@mit.edu",
     license_files=("LICENSE.txt",),
-    packages=["trak"],
+    packages=["trak_mod"],
     install_requires=[
         "torch>=2.0.0",
         "numpy",
