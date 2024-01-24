@@ -2,7 +2,7 @@
 from setuptools import setup
 
 setup(
-    name="traker",
+    name="traker_mod",
     version="0.3.2",
     description="TRAK: Attributing Model Behavior at Scale",
     long_description="Check https://trak.csail.mit.edu/ to learn more about TRAK",
