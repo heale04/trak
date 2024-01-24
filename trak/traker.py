@@ -673,9 +673,7 @@ class TRAKer:
         _num_models_used = float(sum(_completed))
 
         # only write to mmap (on disk) once at the end
-        _scores_mmap[:] = (_scores_on_cpu.numpy() / _num_models_used) * (
-            _avg_out_to_losses / _num_models_used
-        )
+        _scores_mmap[:] = (_scores_on_cpu.numpy() / _num_models_used)
 
         self.logger.debug(f"Scores dtype is {_scores_mmap.dtype}")
         self.saver.save_scores(exp_name)
